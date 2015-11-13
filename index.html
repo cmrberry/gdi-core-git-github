@@ -156,10 +156,10 @@
             <h3>Installation and Setup</h3>
             <p>Setup ssh keys</p>
             <pre><code contenteditable class ="command-line">
-             $ cd ~/.ssh
+$ cd ~/.ssh
             </code></pre>
             <pre><code contenteditable class ="command-line">
-$ ssh-keygen -t rsa -C "your_email@example.com"
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # Generating public/private rsa key pair.
 # Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
             </code></pre>
@@ -176,6 +176,14 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
 # Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 # The key fingerprint is:
 # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+
+# Add your key to your local agent so we can use it later
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_rsa
+
+# Copy the contents of your new key so we can add it to GitHub
+# Open the "/Users/you/.ssh/id_rsa.pub" file in a text editor or:
+$ pbcopy < ~/.ssh/id_rsa.pub
             </code></pre>
           </section>
           <section>
