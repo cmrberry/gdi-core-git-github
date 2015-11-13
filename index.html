@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Intro to Git and Github ~ Girl Develop It</title>
+		<title>Intro to Git and GitHub ~ Girl Develop It</title>
 
-		<meta name="description" content="This is the official Girl Develop It Core Intro to Git and GitHub course. Material based on original material by Kim Moir, Daniel Fischer, Aurelia Moser, Carina C. Zona and Izzy Johnston. 
+		<meta name="description" content="This is the official Girl Develop It Core Intro to Git and GitHub course. Material based on original material by Kim Moir, Daniel Fischer, Aurelia Moser, Carina C. Zona and Izzy Johnston.
 
     The course is meant to be taught in a two-hour workshop. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
 		<meta name="author" content="Girl Develop It">
@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -39,9 +39,9 @@
 			  <!-- Opening slide -->
         <section>
           <img src = "images/gdi_logo_badge.png">
-          <h3>Intro to Git and Github</h3>
+          <h3>Intro to Git and GitHub</h3>
         </section>
-        
+
         <!-- Welcome-->
         <section>
           <h3>Welcome!</h3>
@@ -56,7 +56,7 @@
           </ul>
           </div>
         </section>
-        
+
         <section>
           <h3>Welcome!</h3>
           <div class = "left-align">
@@ -68,16 +68,16 @@
           </ul>
           </div>
         </section>
-        
+
         <section>
           <h3>What we will cover today</h3>
           <ul>
             <li class ="fragment">What is version control and why should we care?</li>
-            <li class ="fragment">Basics of git -- the essential commands</li>
+            <li class ="fragment">Basics of Git -- the essential commands</li>
             <li class ="fragment">"Gitting" social with GitHub</li>
           </ul>
         </section>
-        
+
         <!-- Version control-->
         <section>
           <section>
@@ -148,7 +148,7 @@
           <section>
             <h3>Installation and Setup</h3>
             <a href = "http://git-scm.com/downloads" alt ="Download latest version of Git" target ="_blank">
-              <p>Install git</p>
+              <p>Install Git</p>
               <img src = "images/install-git.png" alt = "Download latest version of Git"/>
             </a>
           </section>
@@ -180,19 +180,19 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
           </section>
           <section>
             <h3>Installation and Setup</h3>
-            <p>Add SSH Key to Github</p>
-            <img src = "images/add-ssh.png" alt ="Steps to add SSH key to github account"/>
+            <p>Add SSH Key to GitHub</p>
+            <img src = "images/add-ssh.png" alt ="Steps to add SSH key to GitHub account"/>
           </section>
           <section>
             <h3>Installation and Setup</h3>
             <p>Setup name and email in gitconfig</p>
             <pre><code contenteditable class ="command-line">
 $ git config --global user.name "Your Name Here"
-# Sets the default name for git to use when you commit
+# Sets the default name for Git to use when you commit
             </code></pre>
             <pre><code contenteditable class ="command-line">
 $ git config --global user.email "your_email@example.com"
-# Sets the default email for git to use when you commit
+# Sets the default email for Git to use when you commit
             </code></pre>
             <pre><code contenteditable class ="command-line">
 $ git config --list
@@ -256,7 +256,7 @@ $ git config --list
               <li class="fragment">When we <span class ="green">add</span> a new file, we tell Git to add the file to the repository to be tracked</li>
               <li class="fragment">When we <span class ="green">stage</span> an existing file (also with the keyword 'add'), we are telling Git to track the current state of our file</li>
               <li class="fragment">A <span class ="green">commit</span> saves changes made to a file, not the file as a whole. The commit will have a 'hash' so we can track which changes were committed when and by whom.</li>
-            
+
             </ul>
           </section>
           <section>
@@ -284,7 +284,7 @@ $ git config --list
         <section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing local changes</h4> 
+            <h4>Undoing local changes</h4>
             <p>If you haven't committed yet</p>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
@@ -297,7 +297,7 @@ $ git config --list
           </section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing staged changes</h4> 
+            <h4>Undoing staged changes</h4>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
               <pre><code contenteditable class ="command-line">
@@ -310,7 +310,7 @@ git checkout hello_world.txt
           </section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing staged changes</h4> 
+            <h4>Undoing staged changes</h4>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
               <pre><code contenteditable class ="command-line">
@@ -376,7 +376,7 @@ git branch
             <p>Switch to master and look at hello_world.txt</p>
             <pre><code contenteditable class ="command-line">
 git checkout master
-            </code></pre>            
+            </code></pre>
             <p>Switch to version2 and look at hello_world.txt</p>
             <pre><code contenteditable class ="command-line">
 git checkout version2
@@ -419,7 +419,7 @@ git commit -m "Changing first line in version2"
 git merge master
             </code></pre>
             <p class ="fragment">You will be notified of a conflict. Go to the file and fix the problem. Then commit your edits.</p>
-                       
+
           </section>
         </section>
         <!-- GitHub-->
@@ -441,12 +441,12 @@ git merge master
           <section>
             <h3>GitHub</h3>
             <h4>Create your first repository</h4>
-            <img src = "images/bootcamp_2_newrepo.jpg" alt ="How to create a new repository. Image from https://help.github.com/articles/create-a-repo"/>
+            <img src = "images/repo-create.png" alt ="How to create a new repository. Image from https://help.github.com/articles/creating-a-new-repository/"/>
           </section>
           <section>
             <h3>GitHub</h3>
             <h4>Create your first repository</h4>
-            <img src = "images/bootcamp_2_repoinfo.png" alt ="How to create a new repository. Image from https://help.github.com/articles/create-a-repo"/>
+            <img src = "images/repo-create-name.png" alt ="How to create a new repository. Image from https://help.github.com/articles/creating-a-new-repository/"/>
           </section>
           <section>
             <h3>GitHub</h3>
@@ -457,7 +457,7 @@ git merge master
           </section>
           <section>
             <h3>GitHub</h3>
-            <h4>Get Local Repository of GitHub Repo</h4>
+            <h4>Get Local Copy of GitHub Repo</h4>
             <pre><code contenteditable class ="command-line">
 cd ../ # Back in root directory
 mkdir hello-github
@@ -476,7 +476,7 @@ git add README
 git commit -m "Updating readme file"
 git push origin master
             </code></pre>
-            <p class ="fragment">Go look at your github repo online</p>
+            <p class ="fragment">Go look at your GitHub repo online</p>
           </section>
           <section>
             <h3>GitHub</h3>
@@ -505,7 +505,7 @@ git push origin master
           </section>
           <section>
             <h3>Forking</h3>
-            <img src = "images/bootcamp_3_fork.jpg" alt ="How to fork a repository. Image from https://help.github.com/articles/fork-a-repo"/>
+            <img src = "images/fork_button.jpg" alt ="How to fork a repository. Image from https://help.github.com/articles/fork-a-repo"/>
           </section>
           <section>
             <h3>Forking</h3>
@@ -538,15 +538,15 @@ git fetch upstream
           </section>
           <section>
             <h3>Starting a pull request</h3>
-            <img src = "images/click-pull-request.png" alt ="How to initiate a pull request. Image from https://help.github.com/articles/using-pull-requests"/>
+            <img src = "images/pull-request.png" alt ="How to initiate a pull request. Image from https://help.github.com/articles/using-pull-requests"/>
           </section>
           <section>
             <h3>Previewing  and sending pull request</h3>
-            <img src = "images/pull-request.png" alt ="How to preview and send a pull request. Image from https://help.github.com/articles/using-pull-requests"/>
+            <img src = "images/pull-request-review-page.png" alt ="How to preview and send a pull request. Image from https://help.github.com/articles/using-pull-requests"/>
           </section>
           <section>
             <h3>Managing pull requests</h3>
-             <p>How to manage pull requests is out of the scope of this short workshop, but you can learn more from the <a href = "https://help.github.com/categories/63/articles" target ="_blank" alt = "Links to tutorials on pull requests and collaboration">Github Collaborating Tutorials</a>
+             <p>How to manage pull requests is out of the scope of this short workshop, but you can learn more from the <a href = "https://help.github.com/categories/63/articles" target ="_blank" alt = "Links to tutorials on pull requests and collaboration">GitHub Collaborating Tutorials</a>
           </section>
         </section>
         <!-- -->
@@ -558,7 +558,7 @@ git fetch upstream
 			</div>
   		<footer>
         <div class="copyright">
-          Intro to Git and Github ~ Girl Develop It ~
+          Intro to Git and GitHub ~ Girl Develop It ~
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
